@@ -1,0 +1,104 @@
+	<div class="gtco-section">
+		<div class="gtco-container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2 class="editable">Vragen?</h2>
+					<p class="editable">
+
+Vul ons contactformulier in, dan komen we zo snel mogelijk bij u terug.</p>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="col-md-6 animate-box">
+					<form method="POST" action="/thankyou.html">
+
+						{% for item in site.data.contactform.form_fields %}
+						{% if item.required %}{% assign requiredstar = ' *' %}{% else %}{% assign requiredstar = '' %}{% endif %}
+						{% if item.required %}{% assign requiredtext = 'required' %}{% else %}{% assign requiredtext = '' %}{% endif %}
+
+						{% if item.input_type == 'text' %}
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="{{ item.name }}">{{ item.name }}</label>
+								{% if requiredtext == 'required' %}<input type="{{ item.input_type }}" name="{{ item.name }}" id="{{ item.name }}" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}" required>{% else %}<input type="{{ item.input_type }}" name="{{ item.name }}" id="{{ item.name }}" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}">{% endif %}
+							</div>
+						</div>
+						{% endif %}
+						
+
+						{% if item.input_type == 'email' %}
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="{{ item.name }}">{{ item.name }}</label>
+								{% if requiredtext == 'required' %}<input type="{{ item.input_type }}" name="{{ item.name }}" id="{{ item.name }}" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}" required>{% else %}<input type="{{ item.input_type }}" name="{{ item.name }}" id="{{ item.name }}" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}">{% endif %}
+							</div>
+						</div>
+						{% endif %}
+
+
+						{% if item.input_type == 'textarea' %}
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="{{ item.name }}">{{ item.name }}</label>
+								<textarea name="{{ item.name }}" name="{{ item.name }}" id="{{ item.name }}" cols="30" rows="10" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}" {{ requiredtext }} ></textarea>
+							</div>
+						</div>
+						{% endif %}
+						
+						
+
+						{% if item.input_type == 'radio' %}
+						<div class="row">
+							<div class="col-md-12">
+								<div class="radio">
+	  								<label>{% if requiredtext == 'required' %}<input type="radio" name="{{ item.name }}" value="{{ item.placeholder }}" required>{% else %}<input type="radio" name="{{ item.name }}" value="{{ item.placeholder }}">{% endif %}{{ item.placeholder }}</label>
+								</div>
+							</div>
+						</div>
+						{% endif %}
+
+						{% if item.input_type == 'checkbox' %}
+						<div class="row">
+							<div class="col-md-12">
+								<div class="checkbox">
+	  								<label>{% if requiredtext == 'required' %}<input type="checkbox" name="{{ item.name }}" value="{{ item.placeholder }}" required>{% else %}<input type="checkbox" name="{{ item.name }}" value="{{ item.placeholder }}">{% endif %}{{ item.placeholder }}</label>
+								</div>
+							</div>
+						</div>
+						{% endif %}
+
+						{% if item.input_type == 'html' %}
+						{{ item.placeholder }}
+						{% endif %}
+
+						{% if item.input_type == 'submit' %}
+						<div class="form-group">
+							<input type="{{ item.input_type }}" value="{{ item.placeholder }}" class="btn btn-primary btn-lg" />
+						</div>
+						{% endif %}
+						{% endfor %}
+
+						<input type="hidden" name="_to" value="{{ site.data.subscribeform.subscribe_form_to }}">
+  						<input type="text" name="_gotcha" style="display: none;">
+					</form>		
+				</div>
+				<div class="col-md-5 col-md-push-1 animate-box">
+					
+					
+					<div class="gtco-contact-info">
+						<ul>
+							{% comment %}<li class="address editable">Quellijnstraat, <br>1072 XR Amsterdam, <br>Nederland</li>{% endcomment %}
+							<li class="phone"><a href="tel:{{ site.data.social.phone }}">{{ site.data.social.phone }}</a></li>
+							{% comment %}<li class="email"><a href="mailto:{{ site.data.social.email }}">{{ site.data.social.email }}</a></li>
+							<li class="url"><a href="{{ site.data.settings.url }}">{{ site.data.settings.url }}</a></li>{% endcomment %}
+						</ul>
+					</div>
+					
+
+
+				</div>
+			</div>
+			</div>
+			
+		</div>
+	</div>

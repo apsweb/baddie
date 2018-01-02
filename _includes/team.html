@@ -1,0 +1,34 @@
+	<div id="gtco-team" class="gtco-section">
+		<div class="gtco-container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2>Meet The Team</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+
+
+			<div class="row">
+
+				{% for item in site.team %}
+				<div class="col-lg-4 col-md-4 col-sm-6 animate-box" data-animate-effect="fadeIn">
+					<div class="gtco-staff">
+						<img src="{{ item.image }}" alt="{{ item.title }}">
+						<h3>{{ item.title }}</h3>
+						<strong class="role">{{ item.function }}</strong>
+						{{ item.content }}
+						<ul class="gtco-social-icons">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="#"><i class="icon-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				{% endfor %}
+
+				<div class="clearfix visible-sm-block"></div>
+			</div>
+
+		</div>
+	</div>

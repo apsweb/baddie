@@ -1,0 +1,35 @@
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12 text-right gtco-contact">
+					<ul class="">
+						<li><a href="tel:{{ site.data.social.phone }}"><i class="ti-mobile"></i> {{ site.data.social.phone }} </a></li>
+						{% comment %}<li><a href="{{ site.data.social.twitter_url }}"><i class="ti-twitter-alt"></i> </a></li>{% endcomment %}
+						{% comment %}<li><a href="mailto:{{ site.data.social.email }}"><i class="icon-mail2"></i></a></li>{% endcomment %}
+						{% comment %}<li><a href="{{ site.data.social.facebook_url }}"><i class="ti-facebook"></i></a></li>{% endcomment %}
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><a href="/">{% if site.data.settings.logo_image %}<img src="{{ site.data.settings.logo_image }}" style="max-width: 200px; max-height: 60px; vertical-align: top;" />{% else %}{% if site.data.settings.logo_text %}{{ site.data.settings.logo_text }}{% else %}Aesthetic <em>.</em>{% endif %}{% endif %}</a></div>
+				</div>
+				<div class="col-xs-8 text-right menu-1">
+					<ul>
+						{% if site.data.settings.has_home %}<li {% if page.url == '/' %}class="active"{% endif %}><a href="/index.html">{{ site.data.settings.home_name }}</a></li>{% endif %}
+						<li><a href="#werkwijze">Werkwijze</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="/shopify/">Shopify</a></li>
+						{% if site.data.settings.has_about %}<li {% if page.url == '/about' %}class="active"{% endif %}><a href="/about.html">{{ site.data.settings.about_name }}</a></li>{% endif %}
+						{% if site.data.settings.has_pricing %}<li {% if page.url == '/pricing' %}class="active"{% endif %}><a href="/pricing.html">{{ site.data.settings.pricing_name }}</a></li>{% endif %}
+						{% if site.data.settings.has_services %}<li {% if page.url == '/services' %}class="active"{% endif %}><a href="/services.html">{{ site.data.settings.services_name }}</a></li>{% endif %}
+						{% if site.data.settings.has_products %}<li {% if page.url == '/products' %}class="active"{% endif %}><a href="/products.html">{{ site.data.settings.products_name }}</a></li>{% endif %}
+						{% if site.data.settings.has_portfolio %}<li {% if page.url == '/portfolio' %}class="active"{% endif %}><a href="/portfolio.html">{{ site.data.settings.portfolio_name }}</a></li>{% endif %}
+						{% if site.data.settings.has_blog %}<li {% if page.url == '/blog' or page.layout == 'post' %}class="active"{% endif %}><a href="/blog.html">{{ site.data.settings.blog_name }}</a></li>{% endif %}
+						{% if site.data.settings.has_contact %}<li {% if page.url == '/contact' %}class="active"{% endif %}><a href="/contact/">{{ site.data.settings.contact_name }}</a></li>{% endif %}
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>

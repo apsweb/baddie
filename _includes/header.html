@@ -1,0 +1,19 @@
+	<header id="gtco-header" class="gtco-cover {% if page.layout != 'pricing' %}gtco-cover-xs{% endif %}" role="banner" style="background-image:url({{ site.data.settings.header_image }});">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc">
+							<h1 class="animate-box editable" data-animate-effect="fadeInUp">
+							{% if page.layout == 'post' %}{{ site.data.settings.blog_name }}
+							{% elsif page.layout == 'portfolio-item' %}{{ site.data.settings.portfolio_name }}
+							{% elsif page.layout == 'product' %}{{ site.data.settings.products_name }}
+							{% else %}{{ page.title }}{% endif %}</h1>
+							{% comment %}<h2 class="animate-box editable" data-animate-effect="fadeInUp">Gebruiksvriendelijke webshops</h2>{% endcomment %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>

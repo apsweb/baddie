@@ -1,0 +1,119 @@
+	<div class="gtco-section">
+		<div class="gtco-container">
+			<div class="row row-pb-md">
+
+				<div class="col-md-push-7 col-md-5 animate-box fadeInUp animated-fast">
+					
+					<div class="gtco-contact-info">
+						
+						<h3 class="editable">Gekozen template:</h3>
+
+						{% assign sorted = site.products | sort:"order_num" %}
+						{% for item in sorted %}
+						{% if item.active == true %}
+						<div id="el_{{ item.url }}" class="text-center" style="display: none;">
+							<img src="{{ item.image }}" alt="{{ item.title }}" style="width: 100%;" />
+							<h3 style="margin-bottom: 0;">{{ item.title }}</h3>
+							<p>{{ item.price }}</p>
+
+						</div>
+						{% endif %}
+						{% endfor %}
+
+					</div>
+
+
+				</div>
+
+				<div class="col-md-pull-5 col-md-6 animate-box fadeInUp animated-fast">
+					
+					<h3 class="editable">Vul onderstaande gegevens in:</h3>
+					<form method="POST" action="/thankyou.html">
+
+						{% for item in site.data.orderform.form_fields %}
+						{% if item.required %}{% assign requiredstar = '*' %}{% else %}{% assign requiredstar = '' %}{% endif %}
+						{% if item.required %}{% assign requiredtext = 'required' %}{% else %}{% assign requiredtext = '' %}{% endif %}
+
+						{% if item.input_type == 'text' %}
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="{{ item.name }}">{{ item.name }}</label>
+								{% if requiredtext == 'required' %}<input type="{{ item.input_type }}" name="{{ item.name }}" id="{{ item.name }}" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}" required>{% else %}<input type="{{ item.input_type }}" name="{{ item.name }}" id="{{ item.name }}" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}">{% endif %}
+							</div>
+						</div>
+						{% endif %}
+
+						{% if item.input_type == 'email' %}
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="{{ item.name }}">{{ item.name }}</label>
+								{% if requiredtext == 'required' %}<input type="{{ item.input_type }}" name="{{ item.name }}" id="{{ item.name }}" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}" required>{% else %}<input type="{{ item.input_type }}" name="{{ item.name }}" id="{{ item.name }}" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}">{% endif %}
+							</div>
+						</div>
+						{% endif %}
+
+						{% if item.input_type == 'textarea' %}
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label class="sr-only" for="{{ item.name }}">{{ item.name }}</label>
+								<textarea name="{{ item.name }}" id="{{ item.name }}" cols="30" rows="10" class="form-control" placeholder="{{ item.placeholder }}{{ requiredstar }}" {{ requiredtext }}></textarea>
+							</div>
+						</div>
+						{% endif %}
+
+						{% if item.input_type == 'radio' %}
+						<div class="row">
+							<div class="col-md-12">
+								<div class="radio">
+	  								<label>{% if requiredtext == 'required' %}<input type="radio" name="{{ item.name }}" value="{{ item.placeholder }}" required>{% else %}<input type="radio" name="{{ item.name }}" value="{{ item.placeholder }}">{% endif %}{{ item.placeholder }}</label>
+								</div>
+							</div>
+						</div>
+						{% endif %}
+
+						{% if item.input_type == 'checkbox' %}
+						<div class="row">
+							<div class="col-md-12">
+								<div class="checkbox">
+	  								<label>{% if requiredtext == 'required' %}<input type="checkbox" name="{{ item.name }}" value="{{ item.placeholder }}" required>{% else %}<input type="checkbox" name="{{ item.name }}" value="{{ item.placeholder }}">{% endif %}{{ item.placeholder }}</label>
+								</div>
+							</div>
+						</div>
+						{% endif %}
+
+						{% if item.input_type == 'html' %}
+						{{ item.placeholder }}
+						{% endif %}
+
+						{% if item.input_type == 'submit' %}
+						<div class="form-group">
+							<input type="{{ item.input_type }}" value="{{ item.placeholder }}" class="btn btn-primary btn-lg" />
+						</div>
+						{% endif %}
+						{% endfor %}
+
+						<input type="hidden" name="_to" value="{{ site.data.subscribeform.subscribe_form_to }}">
+						<input type="hidden" id="subject" name="_subject" value="{{ page.url }}">
+  						<input type="text" name="_gotcha" style="display: none;">
+					</form>		
+				</div>
+
+
+
+			</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+						<script>
+							if(window.location.hash) {
+								// Fragment exists
+								document.getElementById('el_'+window.location.hash.substring(1)).style.display = 'block';
+								document.getElementById('subject').value = document.getElementById('subject').value + window.location.hash;
+							} else {
+	  							// Fragment doesn't exist
+	  							window.location.href='/products.html';
+							}
+						</script>

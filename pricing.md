@@ -1,0 +1,4 @@
+---
+title: Prijzen
+layout: pricing
+---

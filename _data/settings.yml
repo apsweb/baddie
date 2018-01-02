@@ -1,0 +1,22 @@
+title: Webshop laten maken? Shopify Amsterdam - WebshopandGo
+url: www.webshopandgo.nl
+logo_text: 'WebshopandGo'
+logo_image: false
+colorset: blue
+header_image: /uploads/webshop-laten-maken.jpg
+has_home: true
+has_about: false
+has_pricing: false
+has_services: false
+has_products: false
+has_portfolio: false
+has_blog: false
+has_contact: true
+home_name: Home
+about_name: Over ons
+pricing_name: Prijzen
+services_name: Diensten
+products_name: Templates
+portfolio_name: Portfolio
+blog_name: Blog
+contact_name: Contact
