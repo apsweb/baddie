@@ -13,7 +13,8 @@
     var feed = new Instafeed({
         get: 'tagged',
         tagName: '3dprinting',
-        clientId: '151d9f0cd3d2472dba3dd2fceac4dc5e'
+        clientId: '151d9f0cd3d2472dba3dd2fceac4dc5e',
+         template: '<a href="{{link}}"><img src="{{image}}" /></a>'
     });
     feed.run();
 </script>
