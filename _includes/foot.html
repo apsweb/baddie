@@ -21,7 +21,7 @@
         accessToken: '4060459131.1677ed0.1707759e6cbf41c5976ba2566869a53c',
         limit: '12',
       resolution: 'standard_resolution',
-       template: '<div class="border2 item"><a class="shadow2" href=" {{link}} "><img src=" {{image}} " /></a></div>',
+       {% raw %}template: '<div class="border2 item"><a class="shadow2" href="{{link}} "><img src=" {{image}} " /></a></div>'{% endraw %},
    after: function () {
         $('.instafeed').owlCarousel({items: 6,navigation: true,navigationText : false});
     }
