@@ -9,14 +9,22 @@
 	<!-- Bootstrap -->
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Instafeed -->
-	<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: '3dprinting',
-        clientId: '151d9f0cd3d2472dba3dd2fceac4dc5e',
-         template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 4060459131,
+        accessToken: '4060459131.1677ed0.1707759e6cbf41c5976ba2566869a53c',
+        limit: '12',
+      resolution: 'standard_resolution',
+       template: '<div class="border2 item"><a class="shadow2" href="{{link}}"><img src="{{image}}" /></a></div>',
+   after: function () {
+        $('.instafeed').owlCarousel({items: 6,navigation: true,navigationText : false});
+    }
+
+    
+        
     });
-    feed.run();
+    userFeed.run();
 </script>
 	<script src="/js/instafeed.min.js"></script>
 	<!-- Waypoints -->
