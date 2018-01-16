@@ -1978,3 +1978,9 @@ form label {
 	margin: 50px auto;
 }
 
+#instafeed {
+	column-count: 3;
+	column-gap: 15px;
+	column-fill: auto;
+}
+
