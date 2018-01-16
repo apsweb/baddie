@@ -1955,9 +1955,9 @@ form label {
   text-align: center;
   text-transform: uppercase;
   transition: color .25s ease;
-  border-radius: .3em;
+  
   border: 1px solid gainsboro;
-   padding: .2rem;
+  
   float: left;
  
   box-shadow: 0 2px 4px #e6e6e6;
@@ -1986,7 +1986,7 @@ form label {
 	margin: 0 2px 15px;
 
 	column-break-inside: avoid;
-	padding: .2rem;
+
 	padding-bottom: 5px;
 	opacity: 1;
 
