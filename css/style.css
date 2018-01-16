@@ -1957,30 +1957,23 @@ form label {
   transition: color .25s ease;
   border-radius: .3em;
   border: 1px solid gainsboro;
-  // padding: .2rem;
+   padding: .2rem;
   float: left;
   color: $grey;
   box-shadow: 0 2px 4px #e6e6e6;
   background: #f6f6f6;
-  &:hover{
-    color: $pink;
-    border-color: $grey;
-    }
+  
   }
-img {
+  
+.post img {
     width: 100%;
     max-width:100%;
     border-radius: 3px;
- //   border: 1px solid gainsboro;
-  //  transition: border .25s ease;
+    border: 1px solid gainsboro;
+    transition: border .25s ease;
   }
 
-#wrapper {
-	width: 95%;
-	max-width: 1400px;
-	min-width: 400px;
-	margin: 50px auto;
-}
+
 
 #instafeed {
 	column-count: 3;
@@ -1993,8 +1986,8 @@ img {
 	margin: 0 2px 15px;
 
 	column-break-inside: avoid;
-	//padding: .2rem;
-	// padding-bottom: 5px;
+	padding: .2rem;
+	padding-bottom: 5px;
 	opacity: 1;
 
 	transition: all .2s ease;
