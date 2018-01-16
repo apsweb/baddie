@@ -1976,6 +1976,7 @@ form label {
 	max-width: 1400px;
 	min-width: 400px;
 	margin: 50px auto;
+	clear: both;
 }
 
 #instafeed {
