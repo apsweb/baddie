@@ -1987,3 +1987,14 @@ form label {
     column-fill: auto;
 }
 
+.post {
+	display: inline-block;
+	margin: 0 2px 15px;
+
+	column-break-inside: avoid;
+
+	opacity: 1;
+
+	transition: all .2s ease;
+}
+
