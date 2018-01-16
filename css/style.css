@@ -1979,7 +1979,10 @@ form label {
 }
 
 #instafeed {
-	
+	    -webkit-column-count: 3;
+    column-count: 3;
+    
+    -webkit-column-fill: auto;
     column-fill: auto;
 }
 
