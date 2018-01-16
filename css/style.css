@@ -1950,3 +1950,18 @@ form label {
 
 .article img {max-width: 100%;}
 
+.post {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color .25s ease;
+  border-radius: .3em;
+  border: 1px solid gainsboro;
+  
+  float: left;
+  
+  box-shadow: 0 2px 4px #e6e6e6;
+  background: #f6f6f6;
+  
+  }
+
