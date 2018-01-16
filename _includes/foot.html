@@ -22,7 +22,7 @@ $(function(){
   $.getJSON('https://api.instagram.com/v1/users/self/media/recent/?access_token='+accessToken+'&callback=?',function (insta) {
     $.each(insta.data,function (photos,src) {
       if ( photos === 20 ) { return false; }
-      $('<a class="post" href="#"> <img src=" '
+      $('<a class="post" href="{{link}}"> <img src=" '
         + this.images.standard_resolution.url + 
         '" /> '
         + this.likes.count +
