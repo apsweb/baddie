@@ -1982,9 +1982,7 @@ form label {
     -moz-columns: 4;
     columns: 4;
     
-    -webkit-column-gap: 3rem;   
-	-moz-column-gap: 3rem;   
-	column-gap: 3rem;
+   padding: 2rem;
 
 }
 
