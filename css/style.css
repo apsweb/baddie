@@ -1977,10 +1977,10 @@ form label {
 }
 
 #instafeed {
-    
-    
-    columns: 4;
+
+    -webkit-columns: 4;
     -moz-columns: 4;
+    columns: 4;
 
 }
 
@@ -2119,5 +2119,28 @@ align-items: center;
     margin-bottom: 4rem;
     font-size: 4rem;
     line-height: 1.2;
+}
+
+
+@media (max-width: 480px) {
+	#instafeed {
+		-webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+	}
+}
+@media (max-width: 780px) {
+	#instafeed {
+		-webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+	}
+}
+@media (min-width: 960px) {
+	#instafeed {
+	-webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+	}
 }
 
