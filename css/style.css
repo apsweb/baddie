@@ -2021,7 +2021,7 @@ form label {
 }
 
 
-
+#gtco-header {display:flex;}
 
 
 .neon {
@@ -2029,7 +2029,7 @@ form label {
   width: 65%;
   height: 250px;
   margin: auto;
-  position: absolute;
+ 
   top: 0;
   left: 0;
   right: 0;
