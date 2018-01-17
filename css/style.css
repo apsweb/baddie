@@ -1981,8 +1981,12 @@ form label {
 }
 
 #instafeed {
-	   column-count: 3;
+	-webkit-column-gap: 15px;   
+	-moz-column-gap: 15px;   
 	column-gap: 15px;
+	
+	-webkit-column-fill: auto;
+	-moz-column-fill: auto;
 	column-fill: auto;
 }
 
