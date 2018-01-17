@@ -13,25 +13,21 @@
 	<script src="/js/instafeed.min.js"></script>
 	
 <script type="text/javascript">
-$(function(){
-	
-	// first script to pull posts
-	
-  var accessToken = '3513155558.d90570a.37b07aed6aa24e24b923fa88166f6432'; // use your own token
-  
-  $.getJSON('https://api.instagram.com/v1/users/self/media/recent/?access_token='+accessToken+'&callback=?',function (insta) {
-    $.each(insta.data,function (photos,src) {
-      if ( photos === 20 ) { return false; }
-      $('<a class="post"> <img src=" '
-        + this.images.standard_resolution.url + 
-        '" /> '
-        + this.likes.count +
-        '<span> &hearts;</span></a>'
-        ).appendTo('#instafeed');
-    }); 
-  });
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: 3513155558,
+        accessToken: '3513155558.d90570a.37b07aed6aa24e24b923fa88166f6432',
+        limit: '12',
+      resolution: 'standard_resolution',
+       {% raw %}template: '<a class="post" href="{{link}} "><img src=" {{image}} " /></a>'{% endraw %},
+   after: function () {
+        $('.instafeed');
+    }
 
-});
+    
+        
+    });
+    userFeed.run();
 </script>
 
 
