@@ -24,9 +24,9 @@ $(function(){
       if ( photos === 20 ) { return false; }
       $('<a class="post"> <img src=" '
         + this.images.standard_resolution.url + 
-        '" /> '
+        '" /> <span>'
         + this.likes.count +
-        ' &hearts;</a>'
+        ' &hearts;</span></a>'
         ).appendTo('#instafeed');
     }); 
   });
