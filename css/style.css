@@ -2086,5 +2086,5 @@ form label {
 #gtco-header .display-tc, .gtco-cover .display-tc {
     display: flex!important;
     flex-direction: column;
-    
+    width:100%;
 }
