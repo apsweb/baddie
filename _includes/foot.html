@@ -21,7 +21,7 @@
   limit: '12',
   {% raw %}template: '<a class="post" href="{{link}} "><img src=" {{image}} " /></a>'{% endraw %},
   filter: function(image) {
-    return image.tags.indexOf('3dprinting') >= 0;
+    return image.tags.indexOf('3dprint') >= 0;
   }
 });
 feed.run();
