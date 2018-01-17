@@ -2030,7 +2030,7 @@ form label {
 .neon {
   text-align: center;
   width: 100%;
-  height: 250px;
+  height: 100%;
   margin: auto;
   
    display: flex;
