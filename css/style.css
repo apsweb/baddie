@@ -2086,9 +2086,9 @@ form label {
 #gtco-header .display-tc, .gtco-cover .display-tc {
     display: flex!important;
     flex-direction: column;
-    width:70%;
+    width:100%;
     justify-content: center;
-    align-self: center;
+    align-items: center;
 }
 
 .ofniet {display:block;}
