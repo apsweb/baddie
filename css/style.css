@@ -2029,11 +2029,12 @@ form label {
   width: 65%;
   height: 250px;
   margin: auto;
- 
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  
+   display: flex;
+  
+ justify-content: center;
+    align-items: center;
+   
 }
 
 .neon b{
