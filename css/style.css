@@ -2018,9 +2018,7 @@ form label {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+
 }
 
 
@@ -2107,9 +2105,7 @@ align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  
    
     width:100%;
     -webkit-flex-align: center;
