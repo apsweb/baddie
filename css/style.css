@@ -2154,3 +2154,6 @@ align-items: center;
 		column-count: 4;
 	}
 }
+
+.about h2, .about p {color:#fff;font-size:52px;}
+
