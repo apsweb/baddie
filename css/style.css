@@ -2155,5 +2155,7 @@ align-items: center;
 	}
 }
 
+.about h2 {text-align:center;}
+
 .about h2, .about p {color:#fff;font-size:52px;}
 
