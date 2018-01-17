@@ -1978,12 +1978,6 @@ form label {
 
 #instafeed {
     
-     -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4;
-  -webkit-column-gap: 3em;
-  -moz-column-gap: 3em;
-  column-gap: 3em;
     
     columns: 4;
     -moz-columns: 4;
