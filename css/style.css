@@ -1973,29 +1973,25 @@ form label {
   }
   
   .instawrapper {
-	width: 95%;
-	max-width: 900px;
-	min-width: 320px;
-	margin: 50px auto;
 	clear: both;
 }
 
 #instafeed {
-	-webkit-column-gap: 15px;   
-	-moz-column-gap: 15px;   
-	column-gap: 15px;
-	
-	-webkit-column-fill: auto;
-	-moz-column-fill: auto;
-	column-fill: auto;
+    
+     -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  column-gap: 3em;
+    
+    
+
 }
 
 .post {
 	display: inline-block;
 	margin: 0 2px 15px;
-	-webkit-column-break-inside: avoid;
-          page-break-inside: avoid;
-               break-inside: avoid;
 
 	opacity: 1;
 
@@ -2003,40 +1999,28 @@ form label {
 }
 
 
-@media (max-width: 480px) {
-	#instafeed {
-		 -moz-column-count: 1;
-        -webkit-column-count: 1;
-		column-count: 1;
-	}
-}
-@media (max-width: 780px) {
-	#instafeed {
-		 -moz-column-count: 2;
-        -webkit-column-count: 2;
-		column-count: 2;
-	}
-}
-@media (min-width: 960px) {
-	#instafeed {
-		 -moz-column-count: 3;
-        -webkit-column-count: 3;
-		column-count: 3;
-	}
-}
 
-@media (min-width: 1100px) {
-	#instafeed {
-	    -moz-column-count: 4;
-        -webkit-column-count: 4;
-		column-count: 4;
-	}
-}
 
 
 #gtco-header {
-    display: flex;
-    flex-direction: column;
+   display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+    -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 
@@ -2113,7 +2097,20 @@ align-items: center;
   display: -ms-flexbox!important;
   display: -webkit-flex!important;
   display: flex!important;
-    flex-direction: column;
+   
+   -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+   
     width:100%;
     -webkit-flex-align: center;
 -ms-flex-align: center;
