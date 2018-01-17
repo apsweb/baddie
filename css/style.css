@@ -1984,7 +1984,8 @@ form label {
   -moz-column-gap: 3em;
   column-gap: 3em;
     
-    
+    columns: 4;
+    -moz-columns: 4;
 
 }
 
