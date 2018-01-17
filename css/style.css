@@ -2021,7 +2021,10 @@ form label {
 }
 
 
-#gtco-header {display:flex;}
+#gtco-header {
+    display: flex;
+    flex-direction: column;
+}
 
 
 .neon {
@@ -2079,3 +2082,9 @@ form label {
   }
 }
 
+
+#gtco-header .display-tc, .gtco-cover .display-tc {
+    display: flex!important;
+    flex-direction: column;
+    
+}
