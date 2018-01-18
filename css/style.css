@@ -2056,33 +2056,46 @@ align-items: center;
   78% {
     color: inherit;
     text-shadow: inherit;
+    box-shadow: inherit;
+    border-color: inherit;
   }
   79%{
      color: #333;
+     border-color: #333;
   }
   80% {
-    
+    box-shadow: none;
     text-shadow: none;
   }
   81% {
     color: inherit;
     text-shadow: inherit;
+    box-shadow: inherit;
+    border-color: inherit;
   }
   82% {
     color: #333;
+    border-color: #333;
     text-shadow: none;
+    box-shadow: none;
   }
   83% {
-    color: inherit;
+      color: inherit;
     text-shadow: inherit;
+    box-shadow: inherit;
+    border-color: inherit;
   }
   92% {
-    color: #333;
+     color: #333;
+    border-color: #333;
     text-shadow: none;
+    box-shadow: none;
   }
   92.5% {
     color: inherit;
     text-shadow: inherit;
+    box-shadow: inherit;
+    border-color: inherit;
   }
 }
 
@@ -2171,7 +2184,7 @@ align-items: center;
 
 .form-control:active, .form-control:focus {
     border-color: #fee;
-  
+  box-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
     
   animation: blink linear infinite 2s;
 
