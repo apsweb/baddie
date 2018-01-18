@@ -2217,3 +2217,7 @@ align-items: center;
 
 .phone a,
 .gtco-contact-info ul li:before {color:white;}
+
+.gtco-nav-toggle {display:none;}
+
+#gtco-header .display-tc {padding-left:4rem;padding-right:4rem;}
