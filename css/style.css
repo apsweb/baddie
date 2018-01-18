@@ -2193,7 +2193,9 @@ align-items: center;
 
 */
 
-.form-control {border-color: pink;color:white;}
+.form-control {border-color: white;color:white;}
+
+.form-control:active, .form-control:focus {border-color: white;color:white;}
 
 .form-control::-webkit-input-placeholder {
   color: #fff;
