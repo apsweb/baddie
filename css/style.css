@@ -2215,4 +2215,5 @@ align-items: center;
   color: #fff;
 }
 
-.phone a {color:white;}
+.phone a,
+.gtco-contact-info ul li:before {color:white;}
