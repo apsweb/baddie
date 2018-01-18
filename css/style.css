@@ -2180,12 +2180,15 @@ align-items: center;
 
 #gtco-footer {padding:4em;}
 
-.form-control {border-color: pink;}
-
-.form-control:active, .form-control:focus {
-    border-color: #fee;
-  box-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+.form-control {border-color: pink;
+    
+    box-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
     
   animation: blink linear infinite 2s;
+    
+}
 
+.form-control:active, .form-control:focus {
+    border-color: pink;
+  
 }
