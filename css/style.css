@@ -2172,7 +2172,7 @@ align-items: center;
 
 .about h2 {text-align:center;margin-bottom:5rem;}
 
-.about h2, .about p {color:#fff;font-size:40px;}
+.about h2, .about p {color:#fff;font-size:4rem;}
 
 .about p {line-height:50px;}
 
@@ -2180,7 +2180,7 @@ align-items: center;
 
 #gtco-footer {padding:4em;}
 
-.instawrapper h2, #contact {color:#fff;text-align:center;}
+.instawrapper h2, #contact {color:#fff;text-align:center;font-size:4rem;}
 
 /*
 .form-control {border-color: pink;}
