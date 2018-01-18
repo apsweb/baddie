@@ -2155,7 +2155,7 @@ align-items: center;
 	}
 }
 
-.about {padding:2rem;}
+.about {padding:2rem;text-align:center;}
 
 .about h2 {text-align:center;margin-bottom:5rem;}
 
