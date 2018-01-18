@@ -2180,6 +2180,7 @@ align-items: center;
 
 #gtco-footer {padding:4em;}
 
+/*
 .form-control {border-color: pink;}
 
 .form-control:active, .form-control:focus {
@@ -2190,15 +2191,17 @@ align-items: center;
 
 }
 
+*/
+
+.form-control {border-color: pink;color:white;}
+
 .form-control::-webkit-input-placeholder {
   color: #fff;
 }
 .form-control:-moz-placeholder {
-  /* Firefox 18- */
   color: #fff;
 }
 .form-control::-moz-placeholder {
-  /* Firefox 19+ */
   color: #fff;
 }
 .form-control:-ms-input-placeholder {
