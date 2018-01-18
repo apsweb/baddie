@@ -2180,7 +2180,7 @@ align-items: center;
 
 #gtco-footer {padding:4em;}
 
-.form-control {border-color:white;}
+.form-control {border-color: #fee;}
 
 .form-control:active, .form-control:focus {
     border-color: #fee;
