@@ -2214,3 +2214,5 @@ align-items: center;
 .form-control:-ms-input-placeholder {
   color: #fff;
 }
+
+.phone a {color:white;}
