@@ -2185,7 +2185,7 @@ align-items: center;
 .form-control:active, .form-control:focus {
     border-color: pink;
   box-shadow: 0 -10px 25px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
-    
+    color:white;
   animation: blink linear infinite 2s;
 
 }
