@@ -2183,7 +2183,7 @@ align-items: center;
 
 .instawrapper h2, #contact {color:#fff;text-align:center;font-size:4rem;}
 
-#contact {margin-top:4rem;}
+#contact {margin-top:4rem;padding-bottom:4rem;}
 
 /*
 .form-control {border-color: pink;}
