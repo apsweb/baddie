@@ -54,7 +54,7 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  background:#112;
+  background:#000;
 }
 .offcanvas #page {
   overflow: hidden;
@@ -2179,6 +2179,8 @@ align-items: center;
 #gtco-footer .display-tc {text-align:center;}
 
 #gtco-footer {padding:4em;}
+
+.instawrapper h2 {color:#fff;text-align:center;}
 
 /*
 .form-control {border-color: pink;}
